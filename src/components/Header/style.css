@@ -1,0 +1,118 @@
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1;
+    overflow-x: hidden;
+}
+
+header {
+    padding: 20px 0;
+    user-select: none;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    ;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li:not(:last-child) {
+    position: relative;
+    padding: 6px 10px;
+}
+
+ul li:not(:last-child) {
+    opacity: .6;
+    transition: var(--main-transition);
+}
+
+
+ul li:not(:last-child):hover {
+    opacity: 1;
+}
+
+
+
+
+/* start toggle menu */
+.bars {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    transition: var(--main-transition);
+    font-weight: bolder;
+}
+
+.bars:hover {
+    color: var(--main-color);
+}
+
+@media (max-width: 820px) {
+    .bars {
+        display: block;
+    }
+
+    header nav {
+
+        transition: var(--main-transition);
+        position: absolute;
+        right: 30px;
+        top: 94.64px;
+        z-index: 3;
+    }
+
+    header nav ul {
+        border-radius: 20px;
+        border: 1px soild #bbb;
+        background-color: rgb(232, 228, 228);
+        flex-direction: column;
+        padding: 30px;
+        color: black;
+    }
+
+    header nav ul li:last-child {
+        margin-top: 20px;
+    }
+
+}
+
+@media (min-width: 821px) {
+    header nav {
+        display: block !important;
+    }
+}
+
+/* start switcher */
+.container-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    border: 2px solid var(--main-color);
+    padding: 2px 5px !important;
+    opacity: 1 !important;
+    cursor: pointer;
+    position: relative;
+}
+
+.container-icons .icons {
+    font-size: 20px;
+}
+
+.container-icons .switch {
+    width: 23px;
+    aspect-ratio: 1/1;
+    background-color: var(--main-color);
+    position: absolute;
+    border-radius: 50%;
+    z-index: 4;
+    left: 8px;
+    transition: var(--main-transition);
+}

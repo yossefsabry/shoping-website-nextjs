@@ -1,0 +1,59 @@
+/* style.css */
+.container-contact {
+    max-width: 800px;
+    margin: 30px auto 0;
+    padding: 10px;
+    height: 75vh;
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 15px 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    background: rgb(188, 187, 187);
+    transition: var(--main-transition);
+    color: #333;
+    font-weight: bold;
+}
+
+input:hover,
+textarea:hover {
+    background: rgb(221, 221, 221);
+}
+
+.container-contact button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin: 10px auto;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+p {
+    color: #4caf50;
+}
