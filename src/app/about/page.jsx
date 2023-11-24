@@ -1,4 +1,4 @@
-import About from '@/components/About/about'
+import About from '@/components/About/About'
 
 export const metadata = {
     title: 'Shopy - About',
